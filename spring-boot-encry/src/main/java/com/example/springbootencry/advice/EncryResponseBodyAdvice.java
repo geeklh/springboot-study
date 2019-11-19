@@ -3,6 +3,8 @@ package com.example.springbootencry.advice;
 import com.alibaba.fastjson.JSON;
 import com.example.springbootencry.util.DesUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -26,6 +28,8 @@ import javax.servlet.http.HttpServletRequest;
 @ControllerAdvice(basePackages = "com.example.springbootencry.controller")
 @Slf4j
 public class EncryResponseBodyAdvice implements ResponseBodyAdvice<Object> {
+
+    Logger log = LoggerFactory.getLogger(getClass());
 
 
     @Override

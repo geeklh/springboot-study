@@ -3,6 +3,8 @@ package com.example.springbootencry.advice;
 import com.alibaba.fastjson.JSON;
 import com.example.springbootencry.util.DesUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -20,12 +22,13 @@ import java.util.Map;
  *
  * @Author: Java碎碎念
  * @Date: 2019/10/24 21:31
- *
  */
 @Component
 @ControllerAdvice(basePackages = "com.example.springbootencry.controller")
 @Slf4j
 public class DecryptRequestBodyAdvice implements RequestBodyAdvice {
+
+    Logger log = LoggerFactory.getLogger(getClass());
 
 
     @Override
@@ -43,11 +46,11 @@ public class DecryptRequestBodyAdvice implements RequestBodyAdvice {
         String dealData = null;
         try {
             //解密操作
-            Map<String,String> dataMap = (Map)body;
+            Map<String, String> dataMap = (Map) body;
             log.info("接收到原始请求数据={}", JSON.toJSONString(dataMap));
             String srcData = dataMap.get("data");
             dealData = DesUtil.decrypt(srcData);
-            log.info("解密后数据={}",dealData);
+            log.info("解密后数据={}", dealData);
         } catch (Exception e) {
             log.error("异常！", e);
         }
