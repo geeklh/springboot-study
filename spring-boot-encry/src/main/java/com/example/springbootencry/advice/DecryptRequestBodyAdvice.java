@@ -2,6 +2,7 @@ package com.example.springbootencry.advice;
 
 import com.alibaba.fastjson.JSON;
 import com.example.springbootencry.util.DesUtil;
+import com.example.springbootencry.util.Desu;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -49,7 +50,8 @@ public class DecryptRequestBodyAdvice implements RequestBodyAdvice {
             Map<String, String> dataMap = (Map) body;
             log.info("接收到原始请求数据={}", JSON.toJSONString(dataMap));
             String srcData = dataMap.get("data");
-            dealData = DesUtil.decrypt(srcData);
+//            dealData = DesUtil.decrypt(srcData);
+            dealData = Desu.decrypt(srcData);
             log.info("解密后数据={}", dealData);
         } catch (Exception e) {
             log.error("异常！", e);

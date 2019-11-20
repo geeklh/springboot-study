@@ -2,6 +2,7 @@ package com.example.springbootencry.advice;
 
 import com.alibaba.fastjson.JSON;
 import com.example.springbootencry.util.DesUtil;
+import com.example.springbootencry.util.Desu;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -54,6 +55,7 @@ public class EncryResponseBodyAdvice implements ResponseBodyAdvice<Object> {
             String srcData = JSON.toJSONString(obj);
             //加密
             returnStr = DesUtil.encrypt(srcData);
+//            returnStr = Desu.encrypt(srcData);
             log.info("接口={},原始数据={},加密后数据={}", request.getRequestURI(), srcData, returnStr);
 
         } catch (Exception e) {

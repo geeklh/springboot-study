@@ -1,5 +1,6 @@
 package com.example.springbootencry.controller;
 
+import com.example.springbootencry.util.MyResult;
 import com.example.springbootencry.util.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,12 +21,18 @@ public class TestController {
      * 响应数据 加密
      */
     @RequestMapping(value = "/sendResponseEncryData")
-    public Result sendResponseEncryData() {
-        Result result = Result.createResult().setSuccess(true);
-        result.setDataValue("name", "Java碎碎念");
-        result.setDataValue("encry", true);
+    public MyResult sendResponseEncryData(){
+        MyResult result = new MyResult();
+        result.setMsg("测试测试");
+        result.setObj("123");
         return result;
     }
+//    public Result sendResponseEncryData() {
+//        Result result = Result.createResult().setSuccess(true);
+//        result.setDataValue("name", "Java碎碎念");
+//        result.setDataValue("encry", true);
+//        return result;
+//    }
 
     /**
      * 获取 解密后的 请求参数
