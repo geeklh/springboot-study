@@ -1,0 +1,22 @@
+2019-11-20 15:22:09,382 [main] []  INFO  com.example.springbootlog.SpringBootLogApplication - Starting SpringBootLogApplication on DESKTOP-01RHDFO with PID 130744 (F:\project\dataJava\springboot-study\spring-boot-log\target\classes started by GeekLi in F:\project\dataJava\springboot-study\spring-boot-log)
+2019-11-20 15:22:09,383 [main] []  INFO  com.example.springbootlog.SpringBootLogApplication - No active profile set, falling back to default profiles: default
+2019-11-20 15:22:09,854 [main] []  INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2019-11-20 15:22:09,859 [main] []  INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2019-11-20 15:22:09,860 [main] []  INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-20 15:22:09,860 [main] []  INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-20 15:22:09,906 [main] []  INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-20 15:22:09,906 [main] []  INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 494 ms
+2019-11-20 15:22:09,994 [main] []  INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-20 15:22:10,068 [main] []  INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2019-11-20 15:22:10,100 [main] []  INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2019-11-20 15:22:10,103 [main] []  INFO  com.example.springbootlog.SpringBootLogApplication - Started SpringBootLogApplication in 0.995 seconds (JVM running for 1.5)
+2019-11-20 15:22:50,234 [http-nio-8888-exec-3] []  INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-20 15:22:50,235 [http-nio-8888-exec-3] []  INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-20 15:22:50,239 [http-nio-8888-exec-3] []  INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2019-11-20 15:22:50,388 [http-nio-8888-exec-3] []  WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [139] milliseconds.
+2019-11-20 15:22:50,394 [http-nio-8888-exec-3] [62B901A67DDB5B7150DBFBF8530749EB]  INFO  com.example.springbootlog.controller.TestLogController - 用户登录成功！
+2019-11-20 15:23:03,322 [http-nio-8888-exec-2] [62B901A67DDB5B7150DBFBF8530749EB]  INFO  com.example.springbootlog.controller.TestLogController - 用户登录成功！
+2019-11-20 15:23:07,088 [http-nio-8888-exec-4] [62B901A67DDB5B7150DBFBF8530749EB]  INFO  com.example.springbootlog.controller.TestLogController - 用户登录成功！
+2019-11-20 15:23:16,465 [http-nio-8888-exec-5] [62B901A67DDB5B7150DBFBF8530749EB]  INFO  com.example.springbootlog.controller.TestLogController - 用户登录成功！
+2019-11-20 15:25:22,021 [http-nio-8888-exec-9] [62B901A67DDB5B7150DBFBF8530749EB]  INFO  com.example.springbootlog.controller.TestLogController - 用户登录成功！
+2019-11-20 15:25:27,817 [http-nio-8888-exec-8] [62B901A67DDB5B7150DBFBF8530749EB]  INFO  com.example.springbootlog.controller.TestLogController - 用户登录成功！
